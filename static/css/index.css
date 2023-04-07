@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+body {
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background-color: #ffe8e1;
+}
+
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #ee6968;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 1rem;
+}
+
+.input-container input[type="file"] {
+    flex: 1;
+    font-family: 'Roboto Slab', Arial;
+    margin-left: 20px;
+}
+
+@media(max-width:450px) {
+    .input-container input[type="file"] {
+        flex: 1;
+        font-family: 'Roboto Slab', Arial;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+.input-container input[type="submit"] {
+    padding: 1rem;
+    border-radius: 50px;
+    height: 5rem;
+    width: 13rem;
+    background-color: #9f9ea9;
+    color: whitesmoke;
+    border: none;
+    font-family: 'Roboto Slab', Arial;
+    display: flex;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #6d6c79;
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+@media (min-width: 850px) {
+    .container {
+        display: flex;
+        padding: 2rem;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+    #div1 {
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .input-container {
+        align-self: center;
+    }
+
+}

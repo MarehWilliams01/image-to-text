@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+		<title>Image to Text Scanner</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="div1">
+				<div class="header">
+					<h1>Image to Text Scanner</h1>
+					<div id="header-text">Convert your handwritten texts to documents</div>
+				</div>
+				<div class="picture">
+					<img src="https://website-assets-fw.freshworks.com/attachments/ckdide54l06j5mrfz7gpq9jey-email-metrics.svg"
+						alt="Scanner">
+				</div>
+			</div>
+			<form method="POST" action="/upload" enctype="multipart/form-data" class="input-container">
+				<label for="file">Select an image:</label>
+				<input type="file" id="file" name="file"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+
+</html>

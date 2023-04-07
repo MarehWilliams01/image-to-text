@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Image to Text Scanner</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="div1">
+                <h1>Result</h1>
+                <div class="picture">
+                    <img src="https://website-assets-fw.freshworks.com/attachments/ckdide54l06j5mrfz7gpq9jey-email-metrics.svg"
+                        alt="Scanner">
+                </div>
+            </div>
+            <div class="div2">
+                {% if extracted_text %}
+                <p>Extracted text:</p>
+                <pre>{{ extracted_text }}</pre>
+                {% else %}
+                <p>No text could be extracted from the image.</p>
+                {% endif %}
+                <br>
+                <a href="/">Back to Home</a>
+            </div>
+        </div>
+    </body>
+
+</html>
