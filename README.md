@@ -34,4 +34,4 @@ The envisioned solution involves building a web application using Flask that all
 - Pytesseract (Tesseract OCR)
 
 ## Web App Demo
-website-assets-fw.freshworks.com/attachments/ckdide54l06j5mrfz7gpq9jey-email-metrics.svg
+[![Web App Demo](https://img.youtube.com/vi/p21cns8h9aY/0.jpg)](https://youtu.be.com/watch?v=p21cns8h9aY)
